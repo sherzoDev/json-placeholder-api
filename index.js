@@ -2,6 +2,7 @@ const URL = 'https://jsonplaceholder.typicode.com/users';
 const $list = document.querySelector(".list");
 const $item = document.querySelector(".item");
 
+
 fetch(URL)
     .then(res => res.json())
     .then(res => res.forEach(element => {
@@ -18,4 +19,4 @@ fetch(URL)
         $list.innerHTML += html;
     }))
 
-$list.append($item);
+// $list.append($item);
