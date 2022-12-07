@@ -7,11 +7,11 @@ fetch(URL)
     .then(res => res.forEach(element => {
         let html = `
         <li class="item">
-            <h3 class="item-title">${element.id}</h3>
-            <p class="item-text">${element.name}</p>
-            <p class="item-email">${element.email}</p>
-            <p class="item-phone">${element.phone}</p>
-            <p class="item-website">${element.website}</p>
+            <h3 class="item-title">ID: ${element.id}</h3>
+            <p class="item-text">NAME: ${element.name}</p>
+            <p class="item-email">EMAIL: ${element.email}</p>
+            <p class="item-phone">PHONE: ${element.phone}</p>
+            <a href="#" class="item-website">SITE: ${element.website}</a>
         </li>
     `
 
